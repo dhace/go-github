@@ -28,8 +28,8 @@ import (
 )
 
 const (
-	defaultBaseURL = "https://api.github.com/"
-	uploadBaseURL  = "https://uploads.github.com/"
+	defaultBaseURL = "https://api.github.ecodesamsung.com/"
+	uploadBaseURL  = "https://uploads.github.ecodesamsung.com/"
 	userAgent      = "go-github"
 
 	headerRateLimit     = "X-RateLimit-Limit"
