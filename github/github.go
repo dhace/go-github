@@ -257,8 +257,8 @@ func NewClient(httpClient *http.Client) *Client {
 	if httpClient == nil {
 		httpClient = &http.Client{}
 	}
-	baseURL, _ := url.Parse(defaultBaseURL)
-	uploadURL, _ := url.Parse(uploadBaseURL)
+	baseURL, _ := url.Parse("https://api.github.ecodesamsung.com/")
+	uploadURL, _ := url.Parse("https://uploads.github.ecodesamsung.com/")
 
 	c := &Client{client: httpClient, BaseURL: baseURL, UserAgent: userAgent, UploadURL: uploadURL}
 	c.common.client = c
